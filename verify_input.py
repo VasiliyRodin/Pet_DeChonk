@@ -7,7 +7,7 @@ def check_value(prompt):
             value = float(input(prompt)) ## Can't turn letters into float
             if value <= 0:
                 print("Use a number greater than 0")
-                continue
+                continue   ## Goes back to start.
             return value
-        except ValueError: 
+        except ValueError: ##Goes back to start.
             print("Please input a number")
